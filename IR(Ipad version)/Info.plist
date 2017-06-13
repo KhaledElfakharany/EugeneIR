@@ -35,5 +35,12 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Trebuchet MS Bold Italic.ttf</string>
+		<string>Trebuchet MS Bold.ttf</string>
+		<string>Trebuchet MS Italic.ttf</string>
+		<string>Trebuchet MS.ttf</string>
+	</array>
 </dict>
 </plist>

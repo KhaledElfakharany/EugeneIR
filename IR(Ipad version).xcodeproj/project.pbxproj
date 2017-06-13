@@ -12,6 +12,10 @@
 		953438121EE4AB7200BC6C75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 953438101EE4AB7200BC6C75 /* Main.storyboard */; };
 		953438141EE4AB7200BC6C75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 953438131EE4AB7200BC6C75 /* Assets.xcassets */; };
 		953438171EE4AB7200BC6C75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 953438151EE4AB7200BC6C75 /* LaunchScreen.storyboard */; };
+		953438231EE4B00100BC6C75 /* Trebuchet MS Bold Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9534381F1EE4B00100BC6C75 /* Trebuchet MS Bold Italic.ttf */; };
+		953438241EE4B00100BC6C75 /* Trebuchet MS Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 953438201EE4B00100BC6C75 /* Trebuchet MS Bold.ttf */; };
+		953438251EE4B00100BC6C75 /* Trebuchet MS Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 953438211EE4B00100BC6C75 /* Trebuchet MS Italic.ttf */; };
+		953438261EE4B00100BC6C75 /* Trebuchet MS.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 953438221EE4B00100BC6C75 /* Trebuchet MS.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		953438131EE4AB7200BC6C75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		953438161EE4AB7200BC6C75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		953438181EE4AB7200BC6C75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9534381F1EE4B00100BC6C75 /* Trebuchet MS Bold Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Trebuchet MS Bold Italic.ttf"; sourceTree = "<group>"; };
+		953438201EE4B00100BC6C75 /* Trebuchet MS Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Trebuchet MS Bold.ttf"; sourceTree = "<group>"; };
+		953438211EE4B00100BC6C75 /* Trebuchet MS Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Trebuchet MS Italic.ttf"; sourceTree = "<group>"; };
+		953438221EE4B00100BC6C75 /* Trebuchet MS.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Trebuchet MS.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +48,7 @@
 			children = (
 				9534380B1EE4AB7200BC6C75 /* IR(Ipad version) */,
 				9534380A1EE4AB7200BC6C75 /* Products */,
+				9534381E1EE4B00100BC6C75 /* Trebuchet */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +71,18 @@
 				953438181EE4AB7200BC6C75 /* Info.plist */,
 			);
 			path = "IR(Ipad version)";
+			sourceTree = "<group>";
+		};
+		9534381E1EE4B00100BC6C75 /* Trebuchet */ = {
+			isa = PBXGroup;
+			children = (
+				9534381F1EE4B00100BC6C75 /* Trebuchet MS Bold Italic.ttf */,
+				953438201EE4B00100BC6C75 /* Trebuchet MS Bold.ttf */,
+				953438211EE4B00100BC6C75 /* Trebuchet MS Italic.ttf */,
+				953438221EE4B00100BC6C75 /* Trebuchet MS.ttf */,
+			);
+			name = Trebuchet;
+			path = "IR(Ipad version)/Trebuchet";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +145,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				953438171EE4AB7200BC6C75 /* LaunchScreen.storyboard in Resources */,
+				953438261EE4B00100BC6C75 /* Trebuchet MS.ttf in Resources */,
+				953438251EE4B00100BC6C75 /* Trebuchet MS Italic.ttf in Resources */,
+				953438231EE4B00100BC6C75 /* Trebuchet MS Bold Italic.ttf in Resources */,
 				953438141EE4AB7200BC6C75 /* Assets.xcassets in Resources */,
+				953438241EE4B00100BC6C75 /* Trebuchet MS Bold.ttf in Resources */,
 				953438121EE4AB7200BC6C75 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
