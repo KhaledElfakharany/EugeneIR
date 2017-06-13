@@ -87,10 +87,10 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2uZ-1h-gg8">
                                         <rect key="frame" x="0.0" y="64" width="728" height="47.5"/>
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ibm-pS-R45">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ibm-pS-R45">
                                                 <rect key="frame" x="50" y="0.0" width="678" height="47.5"/>
                                                 <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
@@ -126,11 +126,11 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="enE-kG-Kfn">
                                         <rect key="frame" x="0.0" y="192.5" width="728" height="47"/>
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pbf-6Z-Fp3">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Pbf-6Z-Fp3">
                                                 <rect key="frame" x="50" y="0.0" width="678" height="47"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -345,10 +345,10 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CUw-cz-Ho4" userLabel="Email Field">
                                                 <rect key="frame" x="0.0" y="58" width="728" height="54.5"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d27-lG-XKd" userLabel="Email Text Field">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="d27-lG-XKd" userLabel="Email Text Field">
                                                         <rect key="frame" x="50" y="0.0" width="678" height="54.5"/>
                                                         <nil key="textColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                 </subviews>
@@ -384,11 +384,11 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qgS-uB-yaY" userLabel="Password Field">
                                                 <rect key="frame" x="0.0" y="174" width="728" height="54.5"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W90-B4-RLz" userLabel="password Text Field">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="W90-B4-RLz" userLabel="password Text Field">
                                                         <rect key="frame" x="50" y="0.0" width="678" height="54.5"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                     </textField>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -426,7 +426,7 @@
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lph-Xc-PWe" userLabel="Risk Text Field">
                                                         <rect key="frame" x="50" y="0.0" width="678" height="54.5"/>
                                                         <nil key="textColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                 </subviews>
@@ -465,7 +465,7 @@
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="we1-cx-HVq" userLabel="Investment Text Field">
                                                         <rect key="frame" x="50" y="0.0" width="678" height="54.5"/>
                                                         <nil key="textColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                 </subviews>
@@ -1385,12 +1385,18 @@
                                         <state key="normal">
                                             <color key="titleColor" red="0.69022369380000004" green="0.68630254270000002" blue="0.68614453080000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="videoPressed:" destination="NX3-SI-Gqd" eventType="touchUpInside" id="KM1-vT-joi"/>
+                                        </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WebBtn" translatesAutoresizingMaskIntoConstraints="NO" id="RJJ-Jr-gOk">
                                         <rect key="frame" x="582.5" y="0.0" width="145.5" height="120"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2b-of-JAV" userLabel="Web Button">
                                         <rect key="frame" x="582.5" y="0.0" width="145.5" height="120"/>
+                                        <connections>
+                                            <action selector="webPressed:" destination="NX3-SI-Gqd" eventType="touchUpInside" id="Iz8-OR-4KW"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Erfahren Sie jetzt mehr" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9V-IE-35E">
                                         <rect key="frame" x="165.5" y="0.0" width="397" height="120"/>
@@ -1485,6 +1491,15 @@
                             <constraint firstItem="cXu-Nf-M6J" firstAttribute="leading" secondItem="T2t-ac-iCa" secondAttribute="leading" id="vDU-ab-oRE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="IRSystem" destination="yd2-4a-uZq" id="p8G-Gw-ka6"/>
+                        <outlet property="aboutUsText" destination="5tT-19-cXb" id="TRP-Qn-V4h"/>
+                        <outlet property="graphImage" destination="WiE-gl-6Ch" id="FIF-l1-48Z"/>
+                        <outlet property="periodTime" destination="q50-3T-zgY" id="eCf-GW-85B"/>
+                        <outlet property="stockPicks" destination="SnV-GG-nXg" id="kiM-Tc-Rqb"/>
+                        <outlet property="tabBar" destination="ykw-L5-22d" id="Phn-2C-AWg"/>
+                        <outlet property="youSettings" destination="sVI-zE-fLj" id="Gp4-Jf-cj1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GS9-q5-hkI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1789,9 +1804,15 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jma-nI-qMP">
-                                                        <rect key="frame" x="50" y="15.5" width="439.5" height="41"/>
+                                                        <rect key="frame" x="50" y="15.5" width="110" height="41"/>
                                                         <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="35"/>
                                                         <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKj-2I-DYv">
+                                                        <rect key="frame" x="180" y="0.0" width="309.5" height="72"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="o3p-8y-nTu">
@@ -1800,10 +1821,12 @@
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstItem="dJi-ro-fCM" firstAttribute="height" secondItem="Jma-nI-qMP" secondAttribute="height" id="Fv3-la-oot"/>
+                                                    <constraint firstAttribute="bottom" secondItem="nKj-2I-DYv" secondAttribute="bottom" id="Yas-Of-wrO"/>
                                                     <constraint firstItem="o3p-8y-nTu" firstAttribute="top" secondItem="UV5-90-DWn" secondAttribute="top" id="bjA-OL-9Af"/>
                                                     <constraint firstItem="dJi-ro-fCM" firstAttribute="centerY" secondItem="Jma-nI-qMP" secondAttribute="centerY" id="d0K-hc-uul"/>
                                                     <constraint firstAttribute="trailing" secondItem="o3p-8y-nTu" secondAttribute="trailing" id="d7u-Mk-t5X"/>
                                                     <constraint firstItem="dJi-ro-fCM" firstAttribute="leading" secondItem="UV5-90-DWn" secondAttribute="leading" id="g2x-Xn-sXu"/>
+                                                    <constraint firstItem="nKj-2I-DYv" firstAttribute="top" secondItem="UV5-90-DWn" secondAttribute="top" id="pAj-tp-tKa"/>
                                                     <constraint firstItem="o3p-8y-nTu" firstAttribute="width" secondItem="UV5-90-DWn" secondAttribute="width" multiplier="0.3" id="qRS-Xa-ahU"/>
                                                     <constraint firstAttribute="bottom" secondItem="o3p-8y-nTu" secondAttribute="bottom" id="zgX-fh-R94"/>
                                                 </constraints>
@@ -1847,6 +1870,9 @@
                                                         <state key="normal" title="Change &gt;">
                                                             <color key="titleColor" red="0.53725490196078429" green="0.53725490196078429" blue="0.54509803921568623" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="PWDPressed:" destination="iDf-9g-fHC" eventType="touchUpInside" id="yVa-sj-VkG"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -1945,6 +1971,16 @@
                             <constraint firstItem="fkC-aY-vN4" firstAttribute="top" secondItem="l8N-br-XzU" secondAttribute="bottom" id="vWb-wx-qZA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="IRSystems" destination="HG2-LL-tAG" id="2Bo-9C-GZ5"/>
+                        <outlet property="mailLbl" destination="iWg-8o-g4s" id="9TP-hm-sYI"/>
+                        <outlet property="numberOfRecommendations" destination="OcK-Es-iX1" id="7Ll-8V-g7T"/>
+                        <outlet property="ratingLbl" destination="nKj-2I-DYv" id="KxR-T4-QrO"/>
+                        <outlet property="ratingStars" destination="o3p-8y-nTu" id="0Vo-fs-lcw"/>
+                        <outlet property="settingsItem" destination="Tyc-5W-dH7" id="Mjt-2S-DSG"/>
+                        <outlet property="stockPicks" destination="ar2-FJ-ckE" id="rxs-Fk-V9h"/>
+                        <outlet property="tabBar" destination="j7l-38-LAx" id="HmG-oO-5zc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8TJ-dC-NKp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
