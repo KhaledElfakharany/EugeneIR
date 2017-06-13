@@ -11,7 +11,6 @@ import UIKit
 class SubsectionCell: UITableViewCell {
 
     @IBOutlet weak var label1: UILabel!
-    @IBOutlet weak var label2: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,6 +18,5 @@ class SubsectionCell: UITableViewCell {
 
     func configCell(label: String){
         label1.text = label
-        label2.text = ""
     }
 }
