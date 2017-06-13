@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (4.4.0)
+  - AlamofireImage (3.2.0):
+    - Alamofire (~> 4.1)
+  - AlamofireURLRequestConfigurable (1.1.1):
+    - Alamofire (~> 4.0)
+  - DropDown (2)
+  - Localize-Swift (1.7.1)
+  - SwiftKeychainWrapper (3.0.1)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage
+  - AlamofireURLRequestConfigurable
+  - DropDown (~> 2)
+  - Localize-Swift
+  - SwiftKeychainWrapper
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  AlamofireImage: 157ed682cc81d3b9db4fb90c1f12180ac552d93b
+  AlamofireURLRequestConfigurable: d1ca1bffb2e1c2052d93626d604791a1ad729382
+  DropDown: 744784d9c9aa505100e942c16acd05430cbb2f0a
+  Localize-Swift: 6cabc1087c0e910e77bfa87c2ed3f65c80c0b2df
+  SwiftKeychainWrapper: 38952a3636320ae61bad3513cadd870929de7a4a
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: 3d3fbb10134c2faed93db3d94bb880744fa8f506
+
+COCOAPODS: 1.2.0

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30079CA93A84AD7ABC4A1076 /* Pods_IR_Ipad_version_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B8D8D4215DE4DD797EC0F5 /* Pods_IR_Ipad_version_.framework */; };
 		95136DEA1EF03C5C006A9FFC /* AA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95136DE91EF03C5C006A9FFC /* AA.swift */; };
 		95136DEC1EF03C88006A9FFC /* AboutUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95136DEB1EF03C88006A9FFC /* AboutUs.swift */; };
 		95136DEE1EF03C8D006A9FFC /* AboutUsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95136DED1EF03C8D006A9FFC /* AboutUsData.swift */; };
@@ -41,6 +42,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E78F5C0C571BBE3E3A5F37E /* Pods-IR(Ipad version).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IR(Ipad version).debug.xcconfig"; path = "Pods/Target Support Files/Pods-IR(Ipad version)/Pods-IR(Ipad version).debug.xcconfig"; sourceTree = "<group>"; };
+		730163CBC1F99FFAC19DC8E0 /* Pods-IR(Ipad version).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IR(Ipad version).release.xcconfig"; path = "Pods/Target Support Files/Pods-IR(Ipad version)/Pods-IR(Ipad version).release.xcconfig"; sourceTree = "<group>"; };
 		95136DE91EF03C5C006A9FFC /* AA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AA.swift; sourceTree = "<group>"; };
 		95136DEB1EF03C88006A9FFC /* AboutUs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUs.swift; sourceTree = "<group>"; };
 		95136DED1EF03C8D006A9FFC /* AboutUsData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsData.swift; sourceTree = "<group>"; };
@@ -74,6 +77,7 @@
 		953438201EE4B00100BC6C75 /* Trebuchet MS Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Trebuchet MS Bold.ttf"; sourceTree = "<group>"; };
 		953438211EE4B00100BC6C75 /* Trebuchet MS Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Trebuchet MS Italic.ttf"; sourceTree = "<group>"; };
 		953438221EE4B00100BC6C75 /* Trebuchet MS.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Trebuchet MS.ttf"; sourceTree = "<group>"; };
+		B7B8D8D4215DE4DD797EC0F5 /* Pods_IR_Ipad_version_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IR_Ipad_version_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,12 +85,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30079CA93A84AD7ABC4A1076 /* Pods_IR_Ipad_version_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24F77C21206960EF31008B57 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E78F5C0C571BBE3E3A5F37E /* Pods-IR(Ipad version).debug.xcconfig */,
+				730163CBC1F99FFAC19DC8E0 /* Pods-IR(Ipad version).release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		95136DE51EF03BA6006A9FFC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +161,8 @@
 				9534380B1EE4AB7200BC6C75 /* IR(Ipad version) */,
 				9534380A1EE4AB7200BC6C75 /* Products */,
 				9534381E1EE4B00100BC6C75 /* Trebuchet */,
+				24F77C21206960EF31008B57 /* Pods */,
+				E654CAD51D3823E580E28883 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -183,6 +199,14 @@
 			path = "IR(Ipad version)/Trebuchet";
 			sourceTree = "<group>";
 		};
+		E654CAD51D3823E580E28883 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7B8D8D4215DE4DD797EC0F5 /* Pods_IR_Ipad_version_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -190,9 +214,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9534381B1EE4AB7200BC6C75 /* Build configuration list for PBXNativeTarget "IR(Ipad version)" */;
 			buildPhases = (
+				8F69BE07DAEBA210550D4236 /* [CP] Check Pods Manifest.lock */,
 				953438051EE4AB7200BC6C75 /* Sources */,
 				953438061EE4AB7200BC6C75 /* Frameworks */,
 				953438071EE4AB7200BC6C75 /* Resources */,
+				ECCDC76D12999D8152A3370C /* [CP] Embed Pods Frameworks */,
+				5AD815279686FF547D6FA22E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5AD815279686FF547D6FA22E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IR(Ipad version)/Pods-IR(Ipad version)-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F69BE07DAEBA210550D4236 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ECCDC76D12999D8152A3370C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IR(Ipad version)/Pods-IR(Ipad version)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		953438051EE4AB7200BC6C75 /* Sources */ = {
@@ -405,6 +480,7 @@
 		};
 		9534381C1EE4AB7200BC6C75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E78F5C0C571BBE3E3A5F37E /* Pods-IR(Ipad version).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "IR(Ipad version)/Info.plist";
@@ -417,6 +493,7 @@
 		};
 		9534381D1EE4AB7200BC6C75 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 730163CBC1F99FFAC19DC8E0 /* Pods-IR(Ipad version).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "IR(Ipad version)/Info.plist";
