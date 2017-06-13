@@ -487,6 +487,9 @@
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpU-hO-nqC">
                                                         <rect key="frame" x="291" y="0.0" width="146" height="81.5"/>
+                                                        <connections>
+                                                            <action selector="goPressed:" destination="t2v-yt-P8X" eventType="touchUpInside" id="VH9-Pv-YPZ"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -542,6 +545,9 @@
                                                 <state key="normal" title="Already have an account">
                                                     <color key="titleColor" red="0.69022369380000004" green="0.68630254270000002" blue="0.68614453080000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="pressHaveAccountButton:" destination="t2v-yt-P8X" eventType="touchUpInside" id="RoY-eG-dUi"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -619,6 +625,19 @@
                             <constraint firstItem="MF8-37-qaN" firstAttribute="leading" secondItem="6eb-a0-QHV" secondAttribute="leading" id="xmn-7R-NCl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="alreadyHaveButton" destination="3Gx-hb-JQT" id="rRj-9u-3gd"/>
+                        <outlet property="emailField" destination="d27-lG-XKd" id="hxt-QK-1B1"/>
+                        <outlet property="emailLabel" destination="JAf-H3-ZNI" id="dEh-ta-9YV"/>
+                        <outlet property="investmentHorizon" destination="VWY-Pm-X3Y" id="1nR-Qb-r1y"/>
+                        <outlet property="investmentHorizonField" destination="we1-cx-HVq" id="VZ0-B0-h8D"/>
+                        <outlet property="passwordField" destination="W90-B4-RLz" id="ohi-1M-p1v"/>
+                        <outlet property="passwordLabel" destination="xsJ-lX-F5n" id="Bae-QO-N2G"/>
+                        <outlet property="pleaseLabel" destination="9g6-B5-PcU" id="PHC-tS-UuE"/>
+                        <outlet property="registerLabel" destination="ohx-hC-drS" id="oKz-tk-uhN"/>
+                        <outlet property="riskField" destination="lph-Xc-PWe" id="q1d-vx-xXF"/>
+                        <outlet property="riskclassLabel" destination="Rnq-KX-UKW" id="XSw-8s-3u7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EN3-mW-tYh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
