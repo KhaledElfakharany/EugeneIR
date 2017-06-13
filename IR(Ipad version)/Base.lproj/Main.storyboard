@@ -1069,9 +1069,9 @@
                                     </stackView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="155" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qZA-6e-hCi">
                                         <rect key="frame" x="28" y="502.5" width="712" height="321"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="155" id="Xpn-fk-2I9">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PickCell" rowHeight="155" id="Xpn-fk-2I9" customClass="PickCell" customModule="IR_Ipad_version_" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="712" height="155"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xpn-fk-2I9" id="kMo-ET-Vls">
@@ -1079,10 +1079,7 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pick" translatesAutoresizingMaskIntoConstraints="NO" id="eUo-Mh-Oai">
-                                                            <rect key="frame" x="8" y="46.5" width="696" height="100"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="100" id="4yF-tc-etJ"/>
-                                                            </constraints>
+                                                            <rect key="frame" x="8" y="55" width="696" height="91.5"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AAPL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8e-xE-xop">
                                                             <rect key="frame" x="8" y="52.5" width="696" height="48"/>
@@ -1097,7 +1094,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="risk2" translatesAutoresizingMaskIntoConstraints="NO" id="30U-Ss-9w5">
-                                                            <rect key="frame" x="8" y="-8.5" width="696" height="50"/>
+                                                            <rect key="frame" x="8" y="0.0" width="696" height="50"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="50" id="aA3-uJ-4kR"/>
                                                             </constraints>
@@ -1108,6 +1105,9 @@
                                                                 <constraint firstAttribute="height" constant="100" id="OiZ-pN-wxZ"/>
                                                                 <constraint firstAttribute="width" constant="120" id="hoE-0F-6iD"/>
                                                             </constraints>
+                                                            <connections>
+                                                                <action selector="infoPressed:" destination="Xpn-fk-2I9" eventType="touchUpInside" id="FC6-se-vT2"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <constraints>
@@ -1115,6 +1115,7 @@
                                                         <constraint firstItem="eUo-Mh-Oai" firstAttribute="top" secondItem="30U-Ss-9w5" secondAttribute="bottom" constant="5" id="BjG-wE-VPw"/>
                                                         <constraint firstItem="f8e-xE-xop" firstAttribute="leading" secondItem="kMo-ET-Vls" secondAttribute="leadingMargin" id="Br6-kj-vPD"/>
                                                         <constraint firstItem="eUo-Mh-Oai" firstAttribute="trailing" secondItem="kMo-ET-Vls" secondAttribute="trailingMargin" id="Dkb-yC-XBQ"/>
+                                                        <constraint firstItem="30U-Ss-9w5" firstAttribute="top" secondItem="kMo-ET-Vls" secondAttribute="top" id="LWm-pK-2QJ"/>
                                                         <constraint firstItem="30U-Ss-9w5" firstAttribute="leading" secondItem="kMo-ET-Vls" secondAttribute="leadingMargin" id="Pmi-5A-Wb8"/>
                                                         <constraint firstAttribute="bottomMargin" secondItem="3pg-Jf-KU2" secondAttribute="bottom" constant="10" id="XNw-2x-b9A"/>
                                                         <constraint firstAttribute="bottomMargin" secondItem="N21-2s-0es" secondAttribute="bottom" id="aEd-C0-14D"/>
@@ -1127,6 +1128,14 @@
                                                         <constraint firstItem="eUo-Mh-Oai" firstAttribute="leading" secondItem="kMo-ET-Vls" secondAttribute="leadingMargin" id="y0r-OF-cZF"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <outlet property="btn" destination="N21-2s-0es" id="FS2-9W-mV4"/>
+                                                    <outlet property="isin" destination="3pg-Jf-KU2" id="K6K-eG-UTI"/>
+                                                    <outlet property="pic" destination="eUo-Mh-Oai" id="XPm-Fq-aoK"/>
+                                                    <outlet property="riskType" destination="30U-Ss-9w5" id="Jg1-Fc-M97"/>
+                                                    <outlet property="sybmbol" destination="f8e-xE-xop" id="cLu-eY-4Gp"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
@@ -1176,6 +1185,9 @@
                                             <constraint firstAttribute="height" constant="100" id="BMn-RV-BHi"/>
                                             <constraint firstAttribute="width" constant="120" id="PQm-wk-sPM"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="infoPressed:" destination="7Nh-pO-yMC" eventType="touchUpInside" id="lyU-Re-H9l"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.94117647058823528" green="0.93333333333333335" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
@@ -1254,6 +1266,17 @@
                             <constraint firstItem="Ejm-d3-Bmw" firstAttribute="top" secondItem="S0k-d6-BOS" secondAttribute="bottom" id="uM3-6j-hjW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="IRSystems" destination="YQN-nL-QWf" id="C4Q-J7-r8R"/>
+                        <outlet property="date" destination="u6o-UC-6Yf" id="3N4-kA-8bf"/>
+                        <outlet property="isin" destination="L7B-VS-1eI" id="h3q-ZQ-qmC"/>
+                        <outlet property="picks" destination="yFO-cx-Bik" id="bKD-cW-PsH"/>
+                        <outlet property="riskType" destination="AgW-La-GZm" id="lfF-aa-Ia6"/>
+                        <outlet property="settings" destination="Bhm-bx-j1m" id="liA-TG-WlM"/>
+                        <outlet property="symbol" destination="HkI-Cr-U4a" id="R4T-mi-Yb5"/>
+                        <outlet property="tabBar" destination="4mf-WY-VXH" id="cbi-aA-b8a"/>
+                        <outlet property="table" destination="qZA-6e-hCi" id="Spm-O5-Zln"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xCx-MG-3gq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -26,7 +26,7 @@ class PickCell: UITableViewCell {
         sybmbol.text = item.symbol
         isin.text = item.isin
         url = item.url
-//        riskType.image = UIImage(named: "risk\(item.risk!)")
+        riskType.image = UIImage(named: "risk\(item.risk!)")
         
     }
     
@@ -35,7 +35,7 @@ class PickCell: UITableViewCell {
         sybmbol.isHidden = true
         isin.isHidden = true
         btn.isHidden = true
-//        riskType.isHidden = true
+        riskType.isHidden = true
     }
 
     @IBAction func infoPressed(_ sender: Any) {

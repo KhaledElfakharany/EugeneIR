@@ -43,7 +43,7 @@ class Picks: UIViewController,UITableViewDelegate,UITableViewDataSource,UITabBar
             self.isin.text = data.myPick.isin
             self.itemUrl = data.myPick.url
             self.otherPicks = data.otherPicks
-//            self.riskType.image = UIImage(named: "risk\(data.myPick.risk!)")
+            self.riskType.image = UIImage(named: "risk\(data.myPick.risk!)")
             for x in 1...self.otherPicks.count+1 {
                 for item in self.otherPicks {
                     if item.risk == x {
@@ -98,7 +98,7 @@ class Picks: UIViewController,UITableViewDelegate,UITableViewDataSource,UITabBar
         }
         else{
             if accountType == "premium" {
-                return 210
+                return 170
             }else {
                 return 300
             }
