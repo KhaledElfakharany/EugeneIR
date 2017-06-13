@@ -14,7 +14,7 @@
         <!--SIGN IN-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="SIGN IN" customClass="LoginVC" customModule="IR_Ipad_version_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" id="BYZ-38-t0r" userLabel="SIGN IN" customClass="LoginVC" customModule="IR_Ipad_version_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -293,7 +293,7 @@
         <!--REGISTER-->
         <scene sceneID="QPW-JK-dJk">
             <objects>
-                <viewController id="t2v-yt-P8X" userLabel="REGISTER" customClass="RegisterVC" customModule="IR_Ipad_version_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterVC" id="t2v-yt-P8X" userLabel="REGISTER" customClass="RegisterVC" customModule="IR_Ipad_version_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="71n-r8-3Bg"/>
                         <viewControllerLayoutGuide type="bottom" id="Td3-Mo-EZd"/>
@@ -627,7 +627,7 @@
         <!--RECOMMENDATIONS-->
         <scene sceneID="N9x-jB-e16">
             <objects>
-                <viewController id="6Hj-vx-1Dr" userLabel="RECOMMENDATIONS" customClass="RecommendationVC" customModule="IR_Ipad_version_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RecommendationVC" id="6Hj-vx-1Dr" userLabel="RECOMMENDATIONS" customClass="RecommendationVC" customModule="IR_Ipad_version_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rJ9-oS-tXh"/>
                         <viewControllerLayoutGuide type="bottom" id="t9O-PC-gUW"/>
@@ -945,7 +945,7 @@
         <!--Top Picks-->
         <scene sceneID="bf4-BR-VCa">
             <objects>
-                <viewController id="7Nh-pO-yMC" userLabel="Top Picks" customClass="Picks" customModule="IR_Ipad_version_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Picks" id="7Nh-pO-yMC" userLabel="Top Picks" customClass="Picks" customModule="IR_Ipad_version_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="S0k-d6-BOS"/>
                         <viewControllerLayoutGuide type="bottom" id="H3h-dh-tSa"/>
@@ -1226,7 +1226,7 @@
         <!--About Us-->
         <scene sceneID="70q-c6-v6h">
             <objects>
-                <viewController id="NX3-SI-Gqd" userLabel="About Us" customClass="AboutUs" customModule="IR_Ipad_version_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutUs" id="NX3-SI-Gqd" userLabel="About Us" customClass="AboutUs" customModule="IR_Ipad_version_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TgK-ei-EYf"/>
                         <viewControllerLayoutGuide type="bottom" id="of7-cw-6Gh"/>
@@ -1431,10 +1431,10 @@
             </objects>
             <point key="canvasLocation" x="2832" y="129"/>
         </scene>
-        <!--View Controller-->
+        <!--Asset Allocation-->
         <scene sceneID="bbH-Xg-tCj">
             <objects>
-                <viewController id="77W-dB-11Q" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AssetAllocation" id="77W-dB-11Q" customClass="AssetAllocation" customModule="IR_Ipad_version_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xzN-NX-sNw"/>
                         <viewControllerLayoutGuide type="bottom" id="GVx-AH-KZ6"/>
@@ -1579,7 +1579,7 @@
         <!--Settings-->
         <scene sceneID="0oy-ME-l0H">
             <objects>
-                <viewController id="iDf-9g-fHC" userLabel="Settings" customClass="SettingsVC" customModule="IR_Ipad_version_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingsVC" id="iDf-9g-fHC" userLabel="Settings" customClass="SettingsVC" customModule="IR_Ipad_version_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="i7c-Dr-N8w"/>
                         <viewControllerLayoutGuide type="bottom" id="fkC-aY-vN4"/>

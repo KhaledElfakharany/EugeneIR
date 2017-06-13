@@ -73,7 +73,7 @@ class LoginVC: UIViewController,UITextFieldDelegate {
                 } else {
                     if authData?.metadata?.show_screen == "aa"{
                         let vc = self.storyboard?.instantiateViewController(withIdentifier: "AssetAllocation") as! AssetAllocation
-                        vc.user = user
+//                        vc.user = user
                         self.present(vc, animated: true, completion: nil)
                     }else if authData?.metadata?.show_screen == "recommendations" {
                         let vc = self.storyboard?.instantiateViewController(withIdentifier: "RecommendationVC") as! RecommendationVC

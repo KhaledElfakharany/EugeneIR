@@ -122,7 +122,7 @@ class RecommendationVC: UIViewController,UITableViewDelegate,UITableViewDataSour
     }
     @IBAction func backPressed(_ sender: Any) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "AssetAllocation") as! AssetAllocation
-        vc.user = user
+//        vc.user = user
         self.present(vc, animated: true, completion: nil)
     }
 }
