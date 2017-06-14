@@ -32,6 +32,7 @@
 		95136E141EF03DC1006A9FFC /* SubsectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95136E131EF03DC1006A9FFC /* SubsectionCell.swift */; };
 		95136E161EF03DE0006A9FFC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95136E151EF03DE0006A9FFC /* User.swift */; };
 		95136E181EF04040006A9FFC /* AssetAllocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95136E171EF04040006A9FFC /* AssetAllocation.swift */; };
+		95136E1A1EF06DF3006A9FFC /* AAData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95136E191EF06DF3006A9FFC /* AAData.swift */; };
 		9534380D1EE4AB7200BC6C75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9534380C1EE4AB7200BC6C75 /* AppDelegate.swift */; };
 		953438121EE4AB7200BC6C75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 953438101EE4AB7200BC6C75 /* Main.storyboard */; };
 		953438141EE4AB7200BC6C75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 953438131EE4AB7200BC6C75 /* Assets.xcassets */; };
@@ -69,6 +70,7 @@
 		95136E131EF03DC1006A9FFC /* SubsectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubsectionCell.swift; sourceTree = "<group>"; };
 		95136E151EF03DE0006A9FFC /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		95136E171EF04040006A9FFC /* AssetAllocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetAllocation.swift; sourceTree = "<group>"; };
+		95136E191EF06DF3006A9FFC /* AAData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAData.swift; sourceTree = "<group>"; };
 		953438091EE4AB7200BC6C75 /* IR(Ipad version).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IR(Ipad version).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9534380C1EE4AB7200BC6C75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		953438111EE4AB7200BC6C75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				95136DE91EF03C5C006A9FFC /* AA.swift */,
+				95136E191EF06DF3006A9FFC /* AAData.swift */,
 				95136DED1EF03C8D006A9FFC /* AboutUsData.swift */,
 				95136DF31EF03C9E006A9FFC /* AuthData.swift */,
 				95136DF91EF03CAC006A9FFC /* Metadata.swift */,
@@ -350,6 +353,7 @@
 				95136E0A1EF03D76006A9FFC /* Picks.swift in Sources */,
 				95136E081EF03D71006A9FFC /* PickItem.swift in Sources */,
 				95136DF21EF03C96006A9FFC /* ApiRequests.swift in Sources */,
+				95136E1A1EF06DF3006A9FFC /* AAData.swift in Sources */,
 				95136DF61EF03CA3006A9FFC /* CustomUISlider.swift in Sources */,
 				95136DF41EF03C9E006A9FFC /* AuthData.swift in Sources */,
 				95136DF81EF03CA7006A9FFC /* LoginVC.swift in Sources */,
