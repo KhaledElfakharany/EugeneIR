@@ -10,6 +10,7 @@ import Foundation
 
 class AAData {
     var AAArray = [AA]()
+    var remaining = 100
     
     init(array : [Dictionary<String,Any>]) {
         for item in array {
@@ -18,6 +19,7 @@ class AAData {
             AAItem.percentage = item["percentage"] as! Int
             AAItem.id = item["id"] as! Int
             AAArray.append(AAItem)
+            remaining-=AAItem.percentage
         }
     }
 }

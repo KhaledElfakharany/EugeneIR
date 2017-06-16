@@ -63,13 +63,13 @@ class ApiRequests {
     
     //FOR AA SCREEN REQUESTS
     
-    func getCurrentAsset(from user: User, callback: @escaping (_ aa:[AA])->()) {
+    func getCurrentAsset(from user: User, callback: @escaping (_ aa:[AA], _ remaining:Int)->()) {
         Alamofire.SessionManager.default.request(RequestsRouter.requestAA(user: user)).responseJSON { response in
             if let json: Dictionary<String, Any> = response.result.value as! Dictionary<String, Any>?  {
                 print("response: \(json)")
                 let currentAA = json["current_aa"] as! [Dictionary<String, Any>]
                 let aa = AAData(array: currentAA)
-                callback(aa.AAArray)
+                callback(aa.AAArray,aa.remaining)
             }
         }
     }

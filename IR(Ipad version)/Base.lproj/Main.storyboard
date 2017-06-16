@@ -690,7 +690,7 @@
                                     </imageView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="403" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Xg6-4B-yXz">
                                         <rect key="frame" x="8" y="332" width="752" height="502"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AssetsCell" rowHeight="403" id="G64-Ga-c6B" customClass="AssetsCell" customModule="IR_Ipad_version_" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="752" height="403"/>
@@ -1605,6 +1605,7 @@
                                                 </constraints>
                                                 <connections>
                                                     <action selector="goPressed:" destination="t2v-yt-P8X" eventType="touchUpInside" id="OXt-Y8-eAe"/>
+                                                    <action selector="goPressed:" destination="77W-dB-11Q" eventType="touchUpInside" id="zhb-ax-T0g"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbf-7G-OPu">
@@ -1616,6 +1617,9 @@
                                                 <state key="normal" title="Reset">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="resetPressed:" destination="77W-dB-11Q" eventType="touchUpInside" id="bvL-Nv-6e4"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -1631,11 +1635,11 @@
                                             <constraint firstItem="gpp-9t-WD2" firstAttribute="leading" secondItem="nnf-ur-4HT" secondAttribute="leading" id="zVD-vb-hgO"/>
                                         </constraints>
                                     </view>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="87" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fu6-tG-4ZF">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="87" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fu6-tG-4ZF">
                                         <rect key="frame" x="20" y="409.5" width="728" height="438"/>
                                         <color key="backgroundColor" red="0.85224086046218872" green="0.90947455167770386" blue="0.83651882410049438" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="87" id="HND-m6-AeX">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sliderCell" rowHeight="87" id="HND-m6-AeX" customClass="sliderCell" customModule="IR_Ipad_version_" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="728" height="87"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HND-m6-AeX" id="gcq-UB-LlW">
@@ -1657,6 +1661,10 @@
                                                                 <constraint firstAttribute="height" constant="30" id="RXf-sy-kiO"/>
                                                                 <constraint firstAttribute="width" constant="600" id="dDH-E1-kmB"/>
                                                             </constraints>
+                                                            <color key="maximumTrackTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <connections>
+                                                                <action selector="valueChanged:" destination="HND-m6-AeX" eventType="valueChanged" id="Pq2-5B-0ov"/>
+                                                            </connections>
                                                         </slider>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLT-Wn-nc6">
                                                             <rect key="frame" x="670" y="39" width="50" height="30"/>
@@ -1668,27 +1676,34 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QU1-6a-7xs">
-                                                            <rect key="frame" x="36" y="39" width="572" height="8"/>
+                                                            <rect key="frame" x="35" y="44" width="573" height="4"/>
                                                             <color key="backgroundColor" red="0.6649944479695431" green="0.6649944479695431" blue="0.6649944479695431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="8" id="48E-Pu-9Tj"/>
+                                                                <constraint firstAttribute="height" constant="4" id="48E-Pu-9Tj"/>
                                                             </constraints>
                                                         </view>
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstItem="hib-Re-gd5" firstAttribute="leading" secondItem="gcq-UB-LlW" secondAttribute="leadingMargin" id="2Gb-CJ-Nxi"/>
                                                         <constraint firstItem="fLT-Wn-nc6" firstAttribute="trailing" secondItem="gcq-UB-LlW" secondAttribute="trailingMargin" id="AG7-UF-iop"/>
-                                                        <constraint firstItem="QU1-6a-7xs" firstAttribute="leading" secondItem="xHd-Kk-e2L" secondAttribute="leading" constant="28" id="AVL-Gz-pf3"/>
+                                                        <constraint firstItem="QU1-6a-7xs" firstAttribute="leading" secondItem="xHd-Kk-e2L" secondAttribute="leading" constant="27" id="AVL-Gz-pf3"/>
                                                         <constraint firstItem="fLT-Wn-nc6" firstAttribute="top" secondItem="xHd-Kk-e2L" secondAttribute="top" id="EjZ-8z-JDt"/>
                                                         <constraint firstItem="xHd-Kk-e2L" firstAttribute="top" secondItem="hib-Re-gd5" secondAttribute="bottom" constant="10" id="XW5-Xp-517"/>
-                                                        <constraint firstItem="QU1-6a-7xs" firstAttribute="trailing" secondItem="xHd-Kk-e2L" secondAttribute="trailing" id="YRi-BN-RoN"/>
                                                         <constraint firstItem="hib-Re-gd5" firstAttribute="top" secondItem="gcq-UB-LlW" secondAttribute="topMargin" id="b61-9j-2W0"/>
-                                                        <constraint firstItem="QU1-6a-7xs" firstAttribute="top" secondItem="xHd-Kk-e2L" secondAttribute="top" id="rJD-pE-QRc"/>
+                                                        <constraint firstItem="fLT-Wn-nc6" firstAttribute="leading" secondItem="QU1-6a-7xs" secondAttribute="trailing" constant="62" id="hbD-xg-2Qk"/>
+                                                        <constraint firstItem="QU1-6a-7xs" firstAttribute="top" secondItem="xHd-Kk-e2L" secondAttribute="top" constant="5" id="rJD-pE-QRc"/>
                                                         <constraint firstItem="fLT-Wn-nc6" firstAttribute="height" secondItem="xHd-Kk-e2L" secondAttribute="height" id="spX-2Y-5Yh"/>
                                                         <constraint firstItem="xHd-Kk-e2L" firstAttribute="leading" secondItem="gcq-UB-LlW" secondAttribute="leadingMargin" id="v5b-iz-R9N"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" red="0.85224086046218872" green="0.90947455167770386" blue="0.83651882410049438" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <outlet property="leadingConst" destination="AVL-Gz-pf3" id="eky-45-2In"/>
+                                                    <outlet property="name" destination="hib-Re-gd5" id="ZxN-J3-AJY"/>
+                                                    <outlet property="percentage" destination="fLT-Wn-nc6" id="MjR-an-y4B"/>
+                                                    <outlet property="slider" destination="xHd-Kk-e2L" id="rSa-0t-UkC"/>
+                                                    <outlet property="trailingConst" destination="hbD-xg-2Qk" id="8xi-hT-6kw"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
@@ -1772,6 +1787,10 @@
                             <constraint firstItem="uCb-Nx-Vhd" firstAttribute="leading" secondItem="aGj-gF-FRv" secondAttribute="trailing" constant="20" id="zAU-9M-CFc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="remainingAssets" destination="AEw-aF-sV4" id="moz-aS-fgT"/>
+                        <outlet property="table" destination="fu6-tG-4ZF" id="D9J-Zw-FYw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gN3-uA-tMH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
